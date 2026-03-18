@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vico.js — Enterprise-grade Node.js Backend Framework</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a2e;
+      background: #fafafa;
+      line-height: 1.6;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 80px 24px; }
+    h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: 8px; }
+    .tagline { font-size: 1.1rem; color: #555; margin-bottom: 48px; }
+    .features {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 32px;
+      margin-bottom: 48px;
+    }
+    .features li {
+      padding-left: 20px;
+      position: relative;
+      font-size: 0.95rem;
+      color: #333;
+    }
+    .features li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #6c63ff;
+      font-weight: 700;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 16px;
+      color: #6c63ff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .links a:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+      .features { grid-template-columns: 1fr; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>vico.js</h1>
+    <p class="tagline">Enterprise-grade Node.js backend framework.</p>
+    <ul class="features">
+      <li>Modular architecture with plugin system</li>
+      <li>Built-in dependency injection</li>
+      <li>TypeScript-first</li>
+      <li>Decorator-based routing and middleware</li>
+      <li>Configuration management</li>
+      <li>Logging and error handling</li>
+      <li>Database integration support</li>
+      <li>Authentication and authorization</li>
+    </ul>
+    <div class="links">
+      <a href="https://github.com/uikoo9/vico.js">GitHub</a>
+      <a href="https://github.com/uikoo9/vico.js#getting-started">Getting Started</a>
+    </div>
+  </div>
+</body>
+</html>
