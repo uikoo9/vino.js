@@ -3,7 +3,7 @@ import tseslint from 'typescript-eslint';
 import prettier from 'eslint-config-prettier';
 
 export default [
-  { ignores: ['.nx', 'node_modules', 'dist', 'static', 'package-lock.json'] },
+  { ignores: ['.nx', '**/node_modules', '**/dist', 'static', 'package-lock.json'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   prettier,

@@ -1,0 +1,36 @@
+{
+  "name": "vino.js",
+  "version": "0.0.1",
+  "description": "A minimal high-performance Node.js web framework",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external h3 --external srvx",
+    "test": "vitest --run"
+  },
+  "keywords": [
+    "web",
+    "framework",
+    "node",
+    "http"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "h3": "^2.0.1-rc.16"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1"
+  }
+}

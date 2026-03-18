@@ -11,7 +11,8 @@
     "prettier:fix": "prettier --write .",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
-    "lint": "npm run build && npm run prettier && npm run eslint",
+    "test": "vitest --run",
+    "lint": "npm run build && npm run test && npm run prettier:fix && npm run eslint:fix",
     "cz": "cz",
     "pb": "lerna publish",
     "graph": "nx graph",
@@ -37,6 +38,7 @@
     "npm-check-updates": "^19.6.5",
     "nx": "^22.5.4",
     "prettier": "^3.8.1",
-    "typescript-eslint": "^8.57.1"
+    "typescript-eslint": "^8.57.1",
+    "vitest": "^4.1.0"
   }
 }
