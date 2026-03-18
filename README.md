@@ -1,4 +1,4 @@
-# vico.js
+# vino.js
 
 Enterprise-grade Node.js backend framework.
 
