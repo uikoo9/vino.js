@@ -1,10 +1,1 @@
-import { _ as i, o as a, c as t, ae as n } from './chunks/framework.EHGTsUvI.js';
-const o = JSON.parse(
-    '{"title":"Getting Started","description":"","frontmatter":{},"headers":[],"relativePath":"guide/getting-started.md","filePath":"guide/getting-started.md"}',
-  ),
-  e = { name: 'guide/getting-started.md' };
-function l(h, s, p, r, k, d) {
-  return (a(), t('div', null, [...(s[0] || (s[0] = [n('', 7)]))]));
-}
-const E = i(e, [['render', l]]);
-export { o as __pageData, E as default };
+import{_ as i,o as a,c as t,ae as n}from"./chunks/framework.EHGTsUvI.js";const o=JSON.parse('{"title":"Getting Started","description":"","frontmatter":{},"headers":[],"relativePath":"guide/getting-started.md","filePath":"guide/getting-started.md"}'),e={name:"guide/getting-started.md"};function l(h,s,p,r,k,d){return a(),t("div",null,[...s[0]||(s[0]=[n("",7)])])}const E=i(e,[["render",l]]);export{o as __pageData,E as default};

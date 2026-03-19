@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vino.js.org/sitemap.xml
