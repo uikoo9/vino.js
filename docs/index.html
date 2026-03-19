@@ -1,95 +1,282 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vino.js — Enterprise-grade Node.js Backend Framework</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        color: #1a1a2e;
-        background: #fafafa;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 80px 24px;
-      }
-      h1 {
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin-bottom: 8px;
-      }
-      .tagline {
-        font-size: 1.1rem;
-        color: #555;
-        margin-bottom: 48px;
-      }
-      .features {
-        list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 12px 32px;
-        margin-bottom: 48px;
-      }
-      .features li {
-        padding-left: 20px;
-        position: relative;
-        font-size: 0.95rem;
-        color: #333;
-      }
-      .features li::before {
-        content: '→';
-        position: absolute;
-        left: 0;
-        color: #6c63ff;
-        font-weight: 700;
-      }
-      .links a {
-        display: inline-block;
-        margin-right: 16px;
-        color: #6c63ff;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 0.95rem;
-      }
-      .links a:hover {
-        text-decoration: underline;
-      }
-      @media (max-width: 480px) {
-        .features {
-          grid-template-columns: 1fr;
-        }
-        h1 {
-          font-size: 1.8rem;
-        }
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>vino.js</title>
+    <meta name="description" content="A minimal high-performance Node.js web framework" />
+    <meta name="generator" content="VitePress v1.6.4" />
+    <link rel="preload stylesheet" href="/assets/style.D6g4bpRC.css" as="style" />
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style" />
+
+    <script type="module" src="/assets/app.CSLYxp9o.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="" />
+    <link rel="modulepreload" href="/assets/chunks/theme.0FBwYYwp.js" />
+    <link rel="modulepreload" href="/assets/chunks/framework.EHGTsUvI.js" />
+    <link rel="modulepreload" href="/assets/index.md.C6Uib97o.lean.js" />
+    <script id="check-dark-mode">
+      (() => {
+        const e = localStorage.getItem('vitepress-theme-appearance') || 'auto',
+          a = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        (!e || e === 'auto' ? a : e === 'dark') && document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script id="check-mac-os">
+      document.documentElement.classList.toggle('mac', /Mac|iPhone|iPod|iPad/i.test(navigator.platform));
+    </script>
   </head>
   <body>
-    <div class="container">
-      <h1>vino.js</h1>
-      <p class="tagline">Enterprise-grade Node.js backend framework.</p>
-      <ul class="features">
-        <li>Modular architecture with plugin system</li>
-        <li>Built-in dependency injection</li>
-        <li>TypeScript-first</li>
-        <li>Decorator-based routing and middleware</li>
-        <li>Configuration management</li>
-        <li>Logging and error handling</li>
-        <li>Database integration support</li>
-        <li>Authentication and authorization</li>
-      </ul>
-      <div class="links">
-        <a href="https://github.com/uikoo9/vino.js">GitHub</a>
-        <a href="https://github.com/uikoo9/vino.js#getting-started">Getting Started</a>
+    <div id="app">
+      <div class="Layout" data-v-c4daae71>
+        <!--[--><!--]--><!--[--><span tabindex="-1" data-v-17ad389b></span
+        ><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-17ad389b>Skip to content</a
+        ><!--]--><!---->
+        <header class="VPNav" data-v-c4daae71 data-v-a46e73f0>
+          <div class="VPNavBar" data-v-a46e73f0 data-v-bb7529ee>
+            <div class="wrapper" data-v-bb7529ee>
+              <div class="container" data-v-bb7529ee>
+                <div class="title" data-v-bb7529ee>
+                  <div class="VPNavBarTitle" data-v-bb7529ee data-v-5622a072>
+                    <a class="title" href="/" data-v-5622a072
+                      ><!--[--><!--]--><!----><span data-v-5622a072>vino.js</span
+                      ><!--[--><!--]--></a
+                    >
+                  </div>
+                </div>
+                <div class="content" data-v-bb7529ee>
+                  <div class="content-body" data-v-bb7529ee>
+                    <!--[--><!--]-->
+                    <div class="VPNavBarSearch search" data-v-bb7529ee><!----></div>
+                    <nav
+                      aria-labelledby="main-nav-aria-label"
+                      class="VPNavBarMenu menu"
+                      data-v-bb7529ee
+                      data-v-5bacfe89
+                    >
+                      <span id="main-nav-aria-label" class="visually-hidden" data-v-5bacfe89> Main Navigation </span
+                      ><!--[--><!--[--><a
+                        class="VPLink link VPNavBarMenuLink"
+                        href="/guide/getting-started.html"
+                        tabindex="0"
+                        data-v-5bacfe89
+                        data-v-8dbce4d0
+                        ><!--[--><span data-v-8dbce4d0>Guide</span
+                        ><!--]--></a
+                      ><!--]--><!--[--><a
+                        class="VPLink link vp-external-link-icon VPNavBarMenuLink"
+                        href="https://github.com/uikoo9/vino.js"
+                        target="_blank"
+                        rel="noreferrer"
+                        tabindex="0"
+                        data-v-5bacfe89
+                        data-v-8dbce4d0
+                        ><!--[--><span data-v-8dbce4d0>GitHub</span
+                        ><!--]--></a
+                      ><!--]--><!--]-->
+                    </nav>
+                    <!---->
+                    <div class="VPNavBarAppearance appearance" data-v-bb7529ee data-v-123fcb2f>
+                      <button
+                        class="VPSwitch VPSwitchAppearance"
+                        type="button"
+                        role="switch"
+                        title
+                        aria-checked="false"
+                        data-v-123fcb2f
+                        data-v-fa1daf57
+                        data-v-7012e5dd
+                      >
+                        <span class="check" data-v-7012e5dd
+                          ><span class="icon" data-v-7012e5dd
+                            ><!--[--><span class="vpi-sun sun" data-v-fa1daf57></span
+                            ><span class="vpi-moon moon" data-v-fa1daf57></span
+                            ><!--]--></span
+                          ></span
+                        >
+                      </button>
+                    </div>
+                    <!---->
+                    <div class="VPFlyout VPNavBarExtra extra" data-v-bb7529ee data-v-0c845e5d data-v-40e55da0>
+                      <button
+                        type="button"
+                        class="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-label="extra navigation"
+                        data-v-40e55da0
+                      >
+                        <span class="vpi-more-horizontal icon" data-v-40e55da0></span>
+                      </button>
+                      <div class="menu" data-v-40e55da0>
+                        <div class="VPMenu" data-v-40e55da0 data-v-39eca401>
+                          <!----><!--[--><!--[--><!---->
+                          <div class="group" data-v-0c845e5d>
+                            <div class="item appearance" data-v-0c845e5d>
+                              <p class="label" data-v-0c845e5d>Appearance</p>
+                              <div class="appearance-action" data-v-0c845e5d>
+                                <button
+                                  class="VPSwitch VPSwitchAppearance"
+                                  type="button"
+                                  role="switch"
+                                  title
+                                  aria-checked="false"
+                                  data-v-0c845e5d
+                                  data-v-fa1daf57
+                                  data-v-7012e5dd
+                                >
+                                  <span class="check" data-v-7012e5dd
+                                    ><span class="icon" data-v-7012e5dd
+                                      ><!--[--><span class="vpi-sun sun" data-v-fa1daf57></span
+                                      ><span class="vpi-moon moon" data-v-fa1daf57></span
+                                      ><!--]--></span
+                                    ></span
+                                  >
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <!----><!--]--><!--]-->
+                        </div>
+                      </div>
+                    </div>
+                    <!--[--><!--]--><button
+                      type="button"
+                      class="VPNavBarHamburger hamburger"
+                      aria-label="mobile navigation"
+                      aria-expanded="false"
+                      aria-controls="VPNavScreen"
+                      data-v-bb7529ee
+                      data-v-670493dd
+                    >
+                      <span class="container" data-v-670493dd
+                        ><span class="top" data-v-670493dd></span><span class="middle" data-v-670493dd></span
+                        ><span class="bottom" data-v-670493dd></span
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider" data-v-bb7529ee><div class="divider-line" data-v-bb7529ee></div></div>
+          </div>
+          <!---->
+        </header>
+        <!----><!---->
+        <div class="VPContent is-home" id="VPContent" data-v-c4daae71 data-v-d2aef184>
+          <div class="VPHome" data-v-d2aef184 data-v-8b59c434>
+            <!--[--><!--]-->
+            <div class="VPHero VPHomeHero" data-v-8b59c434 data-v-d266baba>
+              <div class="container" data-v-d266baba>
+                <div class="main" data-v-d266baba>
+                  <!--[--><!--]--><!--[-->
+                  <h1 class="heading" data-v-d266baba>
+                    <span class="name clip" data-v-d266baba>vino.js</span
+                    ><span class="text" data-v-d266baba>Enterprise-grade Node.js Backend Framework</span>
+                  </h1>
+                  <p class="tagline" data-v-d266baba>A minimal high-performance web framework built on h3.</p>
+                  <!--]--><!--[--><!--]-->
+                  <div class="actions" data-v-d266baba>
+                    <!--[-->
+                    <div class="action" data-v-d266baba>
+                      <a
+                        class="VPButton medium brand"
+                        href="/guide/getting-started.html"
+                        data-v-d266baba
+                        data-v-b20c43c2
+                        >Getting Started</a
+                      >
+                    </div>
+                    <div class="action" data-v-d266baba>
+                      <a
+                        class="VPButton medium alt"
+                        href="https://github.com/uikoo9/vino.js"
+                        target="_blank"
+                        rel="noreferrer"
+                        data-v-d266baba
+                        data-v-b20c43c2
+                        >GitHub</a
+                      >
+                    </div>
+                    <!--]-->
+                  </div>
+                  <!--[--><!--]-->
+                </div>
+                <!---->
+              </div>
+            </div>
+            <!--[--><!--]--><!--[--><!--]-->
+            <div class="VPFeatures VPHomeFeatures" data-v-8b59c434 data-v-1da4ff3d>
+              <div class="container" data-v-1da4ff3d>
+                <div class="items" data-v-1da4ff3d>
+                  <!--[-->
+                  <div class="grid-4 item" data-v-1da4ff3d>
+                    <div class="VPLink no-icon VPFeature" data-v-1da4ff3d data-v-95001937>
+                      <!--[-->
+                      <article class="box" data-v-95001937>
+                        <!---->
+                        <h2 class="title" data-v-95001937>Modular Architecture</h2>
+                        <p class="details" data-v-95001937>Plugin system with built-in dependency injection.</p>
+                        <!---->
+                      </article>
+                      <!--]-->
+                    </div>
+                  </div>
+                  <div class="grid-4 item" data-v-1da4ff3d>
+                    <div class="VPLink no-icon VPFeature" data-v-1da4ff3d data-v-95001937>
+                      <!--[-->
+                      <article class="box" data-v-95001937>
+                        <!---->
+                        <h2 class="title" data-v-95001937>TypeScript-first</h2>
+                        <p class="details" data-v-95001937>Full TypeScript support out of the box.</p>
+                        <!---->
+                      </article>
+                      <!--]-->
+                    </div>
+                  </div>
+                  <div class="grid-4 item" data-v-1da4ff3d>
+                    <div class="VPLink no-icon VPFeature" data-v-1da4ff3d data-v-95001937>
+                      <!--[-->
+                      <article class="box" data-v-95001937>
+                        <!---->
+                        <h2 class="title" data-v-95001937>High Performance</h2>
+                        <p class="details" data-v-95001937>Built on h3 and srvx for blazing fast routing.</p>
+                        <!---->
+                      </article>
+                      <!--]-->
+                    </div>
+                  </div>
+                  <div class="grid-4 item" data-v-1da4ff3d>
+                    <div class="VPLink no-icon VPFeature" data-v-1da4ff3d data-v-95001937>
+                      <!--[-->
+                      <article class="box" data-v-95001937>
+                        <!---->
+                        <h2 class="title" data-v-95001937>Simple API</h2>
+                        <p class="details" data-v-95001937>Express-style API that's easy to learn and use.</p>
+                        <!---->
+                      </article>
+                      <!--]-->
+                    </div>
+                  </div>
+                  <!--]-->
+                </div>
+              </div>
+            </div>
+            <!--[--><!--]-->
+            <div class="vp-doc container" style="" data-v-8b59c434 data-v-2498cc33>
+              <!--[-->
+              <div style="position: relative" data-v-8b59c434><div></div></div>
+              <!--]-->
+            </div>
+          </div>
+        </div>
+        <!----><!--[--><!--]-->
       </div>
     </div>
+    <script>
+      window.__VP_HASH_MAP__ = JSON.parse('{"guide_getting-started.md":"6mxp47ut","index.md":"C6Uib97o"}');
+      window.__VP_SITE_DATA__ = JSON.parse(
+        '{"lang":"en-US","dir":"ltr","title":"vino.js","description":"A minimal high-performance Node.js web framework","base":"/","head":[],"router":{"prefetchLinks":true},"appearance":true,"themeConfig":{"nav":[{"text":"Guide","link":"/guide/getting-started"},{"text":"GitHub","link":"https://github.com/uikoo9/vino.js"}],"sidebar":[{"text":"Guide","items":[{"text":"Getting Started","link":"/guide/getting-started"}]}]},"locales":{},"scrollOffset":134,"cleanUrls":false}',
+      );
+    </script>
   </body>
 </html>

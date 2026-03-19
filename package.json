@@ -17,7 +17,9 @@
     "pb": "lerna publish",
     "graph": "nx graph",
     "update": "ncu -u && npm --workspaces exec -- ncu -u",
-    "clean": "nx reset"
+    "clean": "nx reset",
+    "docs:dev": "npm run dev -w vino-index",
+    "docs:build": "npm run build -w vino-index"
   },
   "config": {
     "commitizen": {

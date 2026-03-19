@@ -2,6 +2,7 @@
 .nx
 node_modules
 package-lock.json
+docs
 
 # packages
 .sh

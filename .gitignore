@@ -260,6 +260,10 @@ yarn.lock
 # vercel
 .vercel
 
+## -- vitepress --
+**/.vitepress/cache
+**/.vitepress/dist
+
 ## -- project --
 .nx
 .npmrc
